@@ -28,7 +28,7 @@ const Hero = () => {
         <Container style={{ textAlign: "center" }}>
           <h1>(React) Google Books Search</h1>
           <p>Search for and Save Books of Interest</p>
-          <div>
+          <div className="search-wrapper">
             <Form onSubmit={handleSubmit} inline>
               <FormControl
                 onChange={handleChange}
@@ -36,7 +36,7 @@ const Hero = () => {
                 placeholder="Search"
                 className="mr-sm-2"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success">Press Enter</Button>
             </Form>
           </div>
         </Container>

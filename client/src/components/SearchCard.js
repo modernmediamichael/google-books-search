@@ -9,21 +9,21 @@ const SearchCard = ({ book }) => {
       <Card style={{ width: "18rem" }}>
         <Card.Img className="card-img" variant="top" src={book.volumeInfo.imageLinks.thumbnail} />
         <Card.Body>
-          <Card.Title>{book.title}</Card.Title>
+        <Card.Title>{book.volumeInfo.title} by {book.volumeInfo.authors}</Card.Title>
           <Card.Text>
             <Truncate
               lines={3}
               ellipsis={
                 <span>
-                  ... <a href={book.link}>Read more</a>
+                  ... <a href={book.volumeInfo.previewLink}>Read more</a>
                 </span>
               }
             >
-              {book.description}
+              {book.volumeInfo.description}
             </Truncate>
           </Card.Text>
           <div className="card-btn__wrapper">
-            <a href={book.link}>
+            <a href={book.volumeInfo.previewLink}>
               <Button variant="primary">View Book</Button>
             </a>
             <a>
