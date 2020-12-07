@@ -7,7 +7,7 @@ const SearchCard = ({ book }) => {
   return (
     <>
       <Card style={{ width: "18rem" }}>
-        <Card.Img className="card-img" variant="top" src={book.image} />
+        <Card.Img className="card-img" variant="top" src={book.volumeInfo.imageLinks.thumbnail} />
         <Card.Body>
           <Card.Title>{book.title}</Card.Title>
           <Card.Text>

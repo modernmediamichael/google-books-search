@@ -6,7 +6,6 @@ const HomeScreen = () => {
     return (
         <>
             <Hero />
-            <SearchResults />
         </>
     )
 }

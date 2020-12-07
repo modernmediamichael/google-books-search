@@ -1,8 +1,9 @@
 import React from "react"
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 const Header = () => {
+  
   return (
     <header>
       <Navbar bg="light" expand="lg">
@@ -17,10 +18,6 @@ const Header = () => {
                 <Nav.Link>Saved</Nav.Link>
               </LinkContainer>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Navbar>
     </header>
